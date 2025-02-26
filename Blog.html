@@ -1,0 +1,140 @@
+html 
+<!DOCTYPE html> 
+<html lang=”en”> 
+<head> 
+    <meta charset=”UTF-8”> 
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”> 
+    <title>Hotel Name</title> 
+    <style> 
+        Body { 
+            Font-family: Arial, sans-serif; 
+            Margin: 0; 
+            Padding: 0; 
+        } 
+        Header { 
+            Background-color: #333; 
+            Color: white; 
+            Padding: 10px 0; 
+            Text-align: center; 
+        } 
+        Nav { 
+            Margin: 0; 
+            Padding: 0; 
+            List-style-type: none; 
+        } 
+        Nav a { 
+            Color: white; 
+            Text-decoration: none; 
+            Padding: 14px 20px; 
+            Display: inline-block; 
+        } 
+        .hero { 
+            Background: url(‘hero-image.jpg’) no-repeat center center/cover; 
+            Color: white; 
+            Text-align: center; 
+            Padding: 100px 20px; 
+        } 
+        .hero h1 { 
+            Margin: 0; 
+            Font-size: 3em; 
+        } 
+        .section { 
+            Padding: 20px; 
+            Text-align: center; 
+        } 
+        .rooms { 
+            Display: flex; 
+            Justify-content: space-around; 
+            Flex-wrap: wrap; 
+        } 
+        .room { 
+            Border: 1px solid #ddd; 
+            Border-radius: 5px; 
+            Margin: 10px; 
+            Padding: 20px; 
+            Width: 30%; 
+        } 
+        Footer { 
+            Background-color: #333; 
+            Color: white; 
+            Text-align: center; 
+            Padding: 10px 0; 
+        } 
+        .booking-form { 
+            Margin: 0 auto; 
+            Max-width: 600px; 
+        } 
+        .booking-form input, .booking-form select, .booking-form button { 
+            Width: 100%; 
+            Padding: 10px; 
+            Margin: 5px 0; 
+            Border: 1px solid #ddd; 
+            Border-radius: 5px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <nav> 
+            <a href=”#”>Home</a> 
+            <a href=”#”>Rooms</a> 
+            <a href=”#”>About</a> 
+            <a href=”#”>Contact</a> 
+        </nav> 
+    </header> 
+ 
+    <section class=”hero”> 
+        <h1>Welcome to Hotel Name</h1> 
+        <p>Experience luxury and comfort</p> 
+    </section> 
+ 
+    <section class=”section”> 
+        <h2>Our Rooms</h2> 
+        <div class=”rooms”> 
+            <div class=”room”> 
+                <h3>Single Room</h3> 
+                <p>Perfect for solo travelers.</p> 
+                <p>Price: $100 per night</p> 
+            </div> 
+            <div class=”room”> 
+                <h3>Double Room</h3> 
+                <p>Ideal for couples or friends.</p> 
+                <p>Price: $150 per night</p> 
+            </div> 
+            <div class=”room”> 
+                <h3>Suite</h3> 
+                <p>Luxurious suite with extra space.</p> 
+                <p>Price: $250 per night</p> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <section class=”section”> 
+        <h2>Book a Room</h2> 
+        <form class=”booking-form”> 
+            <label for=”name”>Name:</label> 
+            <input type=”text” id=”name” name=”name” required> 
+             
+            <label for=”checkin”>Check-in Date:</label> 
+            <input type=”date” id=”checkin” name=”checkin” required> 
+             
+            <label for=”checkout”>Check-out Date:</label> 
+            <input type=”date” id=”checkout” name=”checkout” required> 
+             
+            <label for=”room”>Select Room:</label> 
+            <select id=”room” name=”room”> 
+                <option value=”single”>Single Room</option> 
+                <option value=”double”>Double Room</option> 
+                <option value=”suite”>Suite</option> 
+            </select> 
+             
+<button type=”submit”>Book Now</button> 
+</form> 
+</section> 
+<footer> 
+<p>Contact us: info@hotelname.com | +1 (123) 456-7890</p> 
+<p>&copy; 2024 Hotel Name</p> 
+</footer> 
+</body> 
+</html> 
+```
